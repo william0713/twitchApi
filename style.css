@@ -1,0 +1,158 @@
+html, body {
+	height: 100%;
+
+}
+
+body {
+	background: linear-gradient(
+      rgba(100, 60, 150, 0.8), 
+      rgba(100, 60, 150, 0.8)
+    ), 
+    url('img/anime.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#container {
+	margin: 0 auto;
+	padding-top: 50px;
+	width: 600px;
+}
+
+div.logo img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+
+#wrapper {
+	background-color:
+      rgba(204, 204, 204, 0.3);
+}
+
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+
+div.tab button.active {
+    background-color:
+      rgba(204, 204, 204, 0.3);
+}
+
+.userBox {
+	margin: 0;
+    height: 100%;
+	width: 20%;
+	display: inline-block;
+	text-align: center;    
+    cursor: pointer;
+    
+      -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+.userBox:hover {
+    background-color:
+      rgba(204, 204, 204, 0.5);
+
+}
+
+.onlineImg {
+	margin: 0 auto;
+	padding: 10px;
+	width: 100px;
+}
+
+div.delUser img {
+    margin-top: 25px;
+}
+
+.userBox p, a {
+    margin: 0;
+    width: 100%;
+	text-decoration: none;
+}
+
+.onlineLogo {
+    background-color: green;
+    height: 8px;
+    width: 8px;
+    border-color: green;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+
+.offlineLogo {
+    background-color: lightyellow;
+    height: 8px;
+    width: 8px;
+    border-color: green;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+
+.preview {
+    position: relative;
+    display: inline-block;    
+}
+
+.preview .previewContent {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    right: -83.33%;
+}
+
+.preview:hover .previewContent {
+    visibility: visible;
+}
+
+.preview .previewContent::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 45%;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.preview .previewContent p {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5px;
+}
