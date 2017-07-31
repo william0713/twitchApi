@@ -8,9 +8,8 @@ body {
       rgba(100, 60, 150, 0.8), 
       rgba(100, 60, 150, 0.8)
     ), 
-    url('img/anime.jpg');
+    url('img/anime.jpg') fixed;
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -82,7 +81,7 @@ div.tab button.active {
 .onlineImg {
 	margin: 0 auto;
 	padding: 10px;
-	width: 100px;
+	width: 90%;
 }
 
 div.delUser img {
@@ -155,4 +154,52 @@ div.delUser img {
     width: 80%;
     margin: 0 auto;
     padding-top: 5px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .userBox {
+        width: 33.33%;
+    }
+    .preview:hover .previewContent, .preview .previewContent {
+        /*visibility: collapse;*/
+        display: none;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 496px) {
+    .userBox {
+        width: 50%;
+    }
+    #container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    div.logo img {
+        width: 90%;
+    }
+    .preview:hover .previewContent, .preview .previewContent {
+        /*visibility: collapse;*/
+        display: none;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    .userBox {
+        width: 100%;
+    }
+    #container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    div.logo img {
+        width: 90%;
+    }
+    .preview:hover .previewContent, .preview .previewContent {
+        /*visibility: collapse;*/
+        display: none;
+    }
 }
