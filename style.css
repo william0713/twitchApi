@@ -161,6 +161,10 @@ div.delUser img {
     .userBox {
         width: 33.33%;
     }
+    #container {
+        width: 90%;
+        margin: 0 auto;
+    }
     .preview:hover .previewContent, .preview .previewContent {
         /*visibility: collapse;*/
         display: none;
